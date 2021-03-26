@@ -1,2 +1,4 @@
 .env
 /resources/Template/
+/vendor
+/node_modules
