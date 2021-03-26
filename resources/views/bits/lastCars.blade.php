@@ -13,7 +13,7 @@
 
                         <li class="item">
                             <div class="vehicle-block format-standard">
-                                <a href="{{route("samochod", ['id'=>$oneCar->id])}}" class="media-box"><img
+                                <a href="{{route("car", ['id'=>$oneCar->id])}}" class="media-box"><img
                                         src="{{asset($oneCar->photo->first()->path) ?? asset('images/no-foto.jpg')}}"
                                         alt=""></a>
                                 <div class="vehicle-block-content">

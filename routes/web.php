@@ -5,11 +5,11 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'Controller@mainPage')->name('home');
-Route::get('/kontakt', 'Controller@contact')->name('contact');
-Route::get('/samochod/{id}/{nazwa?}', 'CarControll@showCar')->name('samochod');
-Route::get('/lista-samohodow', 'CarControll@listCars')->name('lista');
-Route::get('/lista-samohodow-wg/{option}/{value}', 'CarControll@listCars')->name('sortBy');
-Route::put('/sendMessage/', 'Controller@sendMessage')->name('wyslijWiadomosc');
+Route::get('/contact', 'Controller@contact')->name('contact');
+Route::get('/car/{id}/{nazwa?}', 'CarControll@showCar')->name('car');
+Route::get('/list-cars', 'CarControll@listCars')->name('list');
+Route::get('/list-cars-by/{option}/{value}', 'CarControll@listCars')->name('sortBy');
+Route::put('/sendMessage/', 'Controller@sendMessage')->name('sendMessage');
 
 //ADMINISTATIVE ROUTES
 Route::get('/login', 'Controller@loguj')->name('login');
@@ -24,11 +24,11 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {
     Route::get('/deletePhoto/{id}', 'CarAdminController@deletePhoto')->name('deletePhoto');
     Route::get('/statusCar/{id}/{status}', 'CarAdminController@statusCar')->name('statusCar');
     Route::get('/editCar/{id}', 'CarAdminController@editCar')->name('editCar');
-    Route::get('/messages/', 'msgControll@list')->name('wiadomosci');
-    Route::get('/delMessage/{id}', 'msgControll@delete')->name('UsunWiadomosc');
-    Route::get('/readMessage/{id}', 'msgControll@ajaxRead')->name('CzytajWiadomosc');
-    Route::get('/settings/', 'SettingControll@index')->name('ustawienia');
-    Route::any('/saveSettings/', 'SettingControll@saveChanges')->name('zapiszustawienia');
+    Route::get('/messages/', 'msgControll@list')->name('messages');
+    Route::get('/delMessage/{id}', 'msgControll@delete')->name('delMessage');
+    Route::get('/readMessage/{id}', 'msgControll@ajaxRead')->name('readMessage');
+    Route::get('/settings/', 'SettingControll@index')->name('settings');
+    Route::any('/saveSettings/', 'SettingControll@saveChanges')->name('saveSettings');
     Route::get('/myAccount/', 'controller@myAccount')->name('myAccount');
     Route::put('/saveMyAccount/', 'controller@saveMyAccount')->name('saveMyAccount');
 

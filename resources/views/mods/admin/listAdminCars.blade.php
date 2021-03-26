@@ -34,7 +34,7 @@
 
                                                     <td>
                                                         <!-- Result -->
-                                                        <a href="{{route("samochod", ['id'=>$oneCar->id])}}"
+                                                        <a href="{{route("car", ['id'=>$oneCar->id])}}"
                                                            class="car-image">
                                                             <img
                                                                 src="{{asset($oneCar->photo->first()->path) ?? asset('images/no-foto.jpg')}}"
@@ -42,7 +42,7 @@
 
                                                         <div class="search-find-results">
                                                             <h5>
-                                                                <a href="{{route("samochod", ['id'=>$oneCar->id])}}">{{$oneCar->make}} {{$oneCar->model}}</a>
+                                                                <a href="{{route("car", ['id'=>$oneCar->id])}}">{{$oneCar->make}} {{$oneCar->model}}</a>
                                                             </h5>
                                                             <ul class="inline">
                                                                 <li>{{$oneCar->year}}</li>

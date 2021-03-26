@@ -3,8 +3,8 @@
       ================================================== -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>{{__('messages.sitename')}}</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Simple car sale system.">
+    <meta name="keywords" content="car, cheap to run, reliable car">
     <meta name="author" content="M.Rogon">
     <!-- Mobile Specific Metas
       ================================================== -->

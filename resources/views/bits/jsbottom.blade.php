@@ -2,7 +2,7 @@
 @auth()
     @if(Route::currentRouteName() == 'editCar')
         @include("mods.admin.bits.ajaxPhotos")
-    @elseif(Route::currentRouteName() == 'wiadomosci')
+    @elseif(Route::currentRouteName() == 'messages')
         @include("mods.admin.bits.ajaxMsg")
     @endif
 @endauth

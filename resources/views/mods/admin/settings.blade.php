@@ -12,7 +12,7 @@
                             <div class="dashboard-block">
                                 <div class="table-responsive">
                                     <form method="post" id="settings" name="settings" class="contact-form clearfix"
-                                          action="{{route("zapiszustawienia")}}">
+                                          action="{{route("saveSettings")}}">
                                         @method('PUT')
                                         @csrf
 

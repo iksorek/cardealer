@@ -14,14 +14,14 @@
                         @foreach($similar as $oneSimilar)
                             <li class="item">
                                 <div class="vehicle-block format-standard">
-                                    <a href="{{route("samochod", ['id'=>$oneSimilar->id])}}" class="media-box"><img
+                                    <a href="{{route("car", ['id'=>$oneSimilar->id])}}" class="media-box"><img
                                             src="{{asset($oneSimilar->getChachedPhoto($oneSimilar->id))}}"
                                             alt=""></a>
                                     <span class="label label-default vehicle-age">{{$oneSimilar->year}}</span>
                                     <span
                                         class="label {{$oneSimilar->label($oneSimilar->status)}} premium-listing">{{$oneSimilar->status}}</span>
                                     <h5 class="vehicle-title"><a
-                                            href="{{route("samochod", ['id'=>$oneSimilar->id])}}">{{$oneSimilar->make}} {{$oneSimilar->model}}</a>
+                                            href="{{route("car", ['id'=>$oneSimilar->id])}}">{{$oneSimilar->make}} {{$oneSimilar->model}}</a>
                                     </h5>
                                     <span
                                         class="vehicle-meta">{!! Str::words($oneSimilar->description, 7, '(...)') !!}</span>

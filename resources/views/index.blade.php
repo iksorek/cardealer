@@ -47,7 +47,7 @@ experience this site.</p>
                             <a href="{{route("home")}}">{{ __('messages.main_page') }}</a>
                         </li>
                         <li>
-                            <a href="{{route("lista")}}">{{ __('messages.available_cars') }}</a>
+                            <a href="{{route("list")}}">{{ __('messages.available_cars') }}</a>
                         </li>
                         <li>
                             <a href="{{route("contact")}}">{{ __('messages.contact') }}</a>
