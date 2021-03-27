@@ -27,7 +27,7 @@
                                     <div class="result-item format-standard">
 
                                         <div class="result-item-image">
-                                            <a href="{{route("samochod", ['id'=>$oneCar->id])}}" class="media-box"><img
+                                            <a href="{{route("car", ['id'=>$oneCar->id])}}" class="media-box"><img
                                                     {{--														src="{{asset($oneCar->photo->first()->path ?? 'images/no-foto.jpg')}}"--}}
                                                     src="{{asset($oneCar->getChachedPhoto($oneCar->id))}}"
                                                     alt="{{$oneCar->make}} {{$oneCar->model}} photo"></a>
@@ -35,14 +35,14 @@
                                             <span
                                                 class="label  premium-listing {{$oneCar->label($oneCar->status)}}">{{$oneCar->status}}</span>
                                             <div class="result-item-view-buttons">
-                                                <a href="{{route("samochod", ['id'=>$oneCar->id])}}"><i
+                                                <a href="{{route("car", ['id'=>$oneCar->id])}}"><i
                                                         class="fa fa-plus"></i>{{__('messages.more')}}</a>
                                             </div>
                                         </div>
 
                                         <div class="result-item-in">
                                             <h4 class="result-item-title"><a
-                                                    href="{{route("samochod", ['id'=>$oneCar->id])}}">{{$oneCar->make}} {{$oneCar->model}}</a>
+                                                    href="{{route("car", ['id'=>$oneCar->id])}}">{{$oneCar->make}} {{$oneCar->model}}</a>
                                             </h4>
                                             <div class="result-item-cont">
                                                 <div class="result-item-block col1">
