@@ -13,8 +13,8 @@
                                 <div class="table-responsive">
                                     <form method="POST" id="settings" name="settings" class="contact-form clearfix"
                                           action="{{route("saveSettings")}}">
-{{--                                        @method('PUT')--}}
-{{--                                        @csrf--}}
+                                        @method('PUT')
+                                        @csrf
 
                                         <label for="slogan">{{__('messages.company_slogan')}}</label>
                                         <input type="text" id="slogan" name="slogan" class="form-control input-lg"
