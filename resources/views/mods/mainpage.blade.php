@@ -9,8 +9,8 @@
                         <h1 class="uppercase strong">{{__('messages.welcome_in')}} {{__('messages.sitename')}}</h1>
                         <p class="lead">{!! nl2br(e(Controll::findSetting('slogan'))) !!}</p>
                     </div>
-                    <div class="col-md-6">
-                        <p>{!! nl2br(e(Controll::findSetting('mainpagetext'))) !!}</p>
+                    <div class="col-md-6 p-5">
+                        <p class="strong">{!! nl2br(e(Controll::findSetting('mainpagetext'))) !!}</p>
                     </div>
                 </div>
                 <div class="spacer-75"></div>
