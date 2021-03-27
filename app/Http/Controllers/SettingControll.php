@@ -12,7 +12,8 @@ class SettingControll extends Controller
     public function __construct()
     {
         if (!Auth::check()) {
-            redirect()->route("home");
+//            redirect()->route("home");
+
         }
         Cache::flush();
 
@@ -26,6 +27,7 @@ class SettingControll extends Controller
 
     public function saveChanges(Request $request)
     {
+        dd(1);
         Setting::where('key', 'telephone')->update(['value' => $request->input('telephone')]);
         Setting::where('key', 'email')->update(['value' => $request->input('email')]);
         Setting::where('key', 'address')->update(['value' => $request->input('address')]);
