@@ -29,7 +29,7 @@
                         @endif
 
                         <form method="post" id="contactform" name="contactform" class="contact-form clearfix"
-                              action="{{route("wyslijWiadomosc")}}">
+                              action="{{route("sendMessage")}}">
                             @method('PUT')
                             @csrf
                             <div class="row">
