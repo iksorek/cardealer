@@ -28,7 +28,7 @@
                             </div>
                         @endif
 
-                        <form method="post" id="contactform" name="contactform" class="contact-form clearfix"
+                        <form method="post" id="contactform2" name="contactform2" class="contact-for2 clearfix2"
                               action="{{route("sendMessage")}}">
                             @method('PUT')
                             @csrf

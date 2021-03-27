@@ -11,7 +11,7 @@
                             <h2>{{__('messages.website_settings')}}</h2>
                             <div class="dashboard-block">
                                 <div class="table-responsive">
-                                    <form method="POST" id="settings" name="settings" class="contact-form clearfix"
+                                    <form method="POST" id="settings" name="settings" class="clearfix"
                                           action="{{route("saveSettings")}}">
                                         @method('PUT')
                                         @csrf
