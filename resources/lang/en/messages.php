@@ -12,7 +12,7 @@ return [
     | these language lines according to your application's requirements.
     |
     */
-    'sitename' => 'CarDealer.co.uk',
+    'sitename' => env('APP_NAME'),
     'logout' => 'Logout',
     'administration' => 'Administration',
     'call_us' => 'Call Us',
