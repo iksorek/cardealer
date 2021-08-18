@@ -52,7 +52,7 @@
                                 </div>
                                 <div class="col-md-7">
                                     <div class="form-group">
-                                        <label for="content"></label><textarea cols="6" rows="8" id="content"
+                                        <label for="content"></label><textarea cols="6" rows="20" id="content"
                                                                                name="content"
 
                                                                                class="form-control input-lg"
