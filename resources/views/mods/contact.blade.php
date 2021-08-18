@@ -54,6 +54,7 @@
                                     <div class="form-group">
                                         <label for="content"></label><textarea cols="6" rows="8" id="content"
                                                                                name="content"
+
                                                                                class="form-control input-lg"
                                                                                placeholder="{{__('messages.your_message')}}"></textarea>
                                     </div>
